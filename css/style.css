@@ -5,21 +5,15 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'poppins';
 }
 body{
     background-color:#0d0924;
-    font-family: 'poppins';
     color: #fff;
     width: 100%;
 }
 
 /* Header Section */
-body{
-    background-color:#0d0924;
-    font-family: 'poppins';
-    color: #fff;
-    width: 100%;
-}
 .nav-menu{
     display: none;
 }
@@ -175,7 +169,7 @@ ul li a:hover{
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(3,1fr);
-    max-width: 960px;
+    width: 960px;
     margin: 20px 8%;
 }
 
@@ -271,9 +265,9 @@ footer{
 } 
 
 
-@media screen and (max-width:450px){
+@media screen and (max-width:425px){
     body{
-        max-width: 90vw;
+        width: 400px;
     }
     .nav-container{
         display: none;
@@ -303,17 +297,17 @@ footer{
     .main-container{
         flex-direction: column;
         justify-content: center;
-        row-gap: 10px;
+        row-gap: 30px;
         margin: 0;
         width: 250px;
         margin: 10px auto 0 auto;
+        height: 100vh;
     }
     .main-container .image img{
         width: auto;
         margin: 0;
         padding: 0;
         height: 300px;
-
     }
     .main-container .hello {
         font-size: 1.2rem;
@@ -341,6 +335,7 @@ footer{
     .about-container{
         flex-direction: column;
         position: relative;
+        height: 100vh;
     }
     .about-div .About-title{
         font-size: 1.2rem;
@@ -363,17 +358,21 @@ footer{
     }
 
     /* Project Container */
-
+    .project-container{
+        height: 40vh;
+    }
     .project-container .title p{
         font-size: 1.2rem;
     }
     .project-row{
-        grid-template-columns: repeat(1,1fr);
-        align-content: center;
-        padding-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 330px;
     }
     .project-row img{
-        width: 290px;
+        width: 270px;
     }
 
 
@@ -381,16 +380,22 @@ footer{
 
     .contact-container{
         position:relative;
-        top: 58rem;
+        top: 48rem;
         width: 90vw;
         right: 4rem;
+        height: 100vh;
     }
-    input{
+    input,textarea{
         height: 5px;
+        width: 350px;
     }
     .contact-container .title p{
-        font-size: 1rem;
+        width: 200px;  
+        font-size: 1.2rem;
         text-align: center;
+        margin: 3rem 160px 30px 160px;
+        /* border: 1px solid white; */
+        
     }
     .contact-form form{
         display: flex;
@@ -400,7 +405,7 @@ footer{
         width: 380px;
     }
     textarea{
-        width: 380px;
+        height: 200px;
     }
     button{
         width: fit-content;
@@ -411,7 +416,8 @@ footer{
 
     footer{
         position: relative;
-        top: 66rem;
+        top: 50rem;
+        width: 300px;
     }
     .footer-title p{
         font-size: 0.6rem;

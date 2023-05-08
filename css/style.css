@@ -306,6 +306,7 @@ footer{
     .togglemenu{
         display: flex;
         margin: 5px;
+        transition: all 0.3s ease-in-out;
     }
     .ul-container li a{
         padding: 0.75rem 1rem;
@@ -315,6 +316,15 @@ footer{
     }
     .ul-container li a:hover{
         text-decoration: underline;
+    }
+    .togglemenu--open .bar:nth-child(1){
+        transform: translateY(7px) rotate(45deg);
+    }
+    .togglemenu--open .bar:nth-child(2){
+        opacity: 0;
+    }
+    .togglemenu--open .bar:nth-child(3){
+        transform: translateY(-11px) rotate(-45deg);
     }
 
 

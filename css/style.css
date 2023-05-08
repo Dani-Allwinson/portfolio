@@ -14,9 +14,6 @@ body{
 }
 
 /* Header Section */
-.nav-menu{
-    display: none;
-}
 header nav{
     padding: 1rem 0;
 }
@@ -38,8 +35,11 @@ nav ul a{
 .nav-container{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 .ul-container{
+    margin:0;
+    padding:0;
     display: flex;
     flex-direction: row;
     column-gap: 1.5rem;
@@ -48,17 +48,26 @@ ul li a:hover{
     text-decoration: underline;
     color: #ab9ef3;
 }
-#myBtn{
-    width: 300px;
-}
-#myBtn img{
-    width: auto;
-  }
-  
   #myBtn:hover {
     background-color: #555;
   }
 
+  .togglemenu{
+    position: absolute;
+    top: 1.4srem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.togglemenu .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
 
 /* Main Section */
 
@@ -265,31 +274,47 @@ footer{
 } 
 
 
-@media screen and (max-width:425px){
+@media screen and (max-width:450px){
     body{
         width: 400px;
     }
+    .nav-container .logo a{
+        position: relative;
+        left: 1rem;
+    }
     .nav-container{
-        display: none;
-    }
-    .nav-menu .logo a{
-        margin-left: 10px;
-        font-size: 0.9rem;
-    }
-    .nav-menu{
-        display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
-        column-gap: 0;
+        align-items: flex-start;
+    
     }
-    .nav-menu ul li a{
-        font-family: 'poppins';
-        font-size: 0.8rem;
+    .ul-container{
         display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0.5rem;
+        gap: 10px;
+        height: 50vh;
+
     }
-    .nav-menu #menu-icon{
-        float: right;
-        margin-right: 0.4rem;
+    .ul-container li{
+        text-align: center;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .togglemenu{
+        display: flex;
+        margin: 5px;
+    }
+    .ul-container li a{
+        padding: 0.75rem 1rem;
+    }
+    .ul-container.active{
+        display: flex;
+    }
+    .ul-container li a:hover{
+        text-decoration: underline;
     }
 
 

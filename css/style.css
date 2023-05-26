@@ -10,6 +10,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: rgba(204, 171, 171, 0.495);
 }
 .navbar{
     min-height: 70px;
@@ -22,7 +23,7 @@ nav{
     background-color: black;
 }
 a , li a {
-    color: rgb(91, 93, 95);
+    color: white;
 }
 .nav-menu{
     display: flex;
@@ -31,14 +32,20 @@ a , li a {
     gap:60px;
 }
 .nav-branding{
-    font-size: 2rem;
-    color: rgb(53, 158, 199);
+    font-size: 3rem;
+    color: whitesmoke;
+}
+.nav-branding:hover{
+    color: grey;
+    transition: 0.5s ease-in-out;
 }
 .nav-link{
     transition:0.7 ease;
 }
 .nav-link:hover{
     color: grey;
+    transition: 0.5s ease-in-out;
+    
 }
 .hamburger{
     display: none;
@@ -52,14 +59,142 @@ a , li a {
     transition: all 0.3s ease-in-out;
     background-color: white;
 }
+.home-section{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    min-height: 100vh;
+    width: 50%;
+    /* margin: 30px auto; */
+    padding: 70px 100px 0 100px;
+}
+.home-section #hello{
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+.para1 p{
+    width: 150%;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+.mail{
+    width: 120%;
+    font-size: 1.3rem;
+}
+#hand{
+    display: inline-block;
+    position: relative;
+    font-size: 19px;
+    bottom: 3px;
+    padding-right: 5px;
+}
+.mail #mailId{
+    border-bottom: 3px solid #000;
+    cursor: pointer;
+}
+#mailId:hover{
+    background-color: #000;
+    color: #fff;
+    transition: 0.5s ease;
+    padding: 5px 5px 0 5px;
+}
+.about-section{
+   min-height: 90vh;
+   margin: 0 100px;
+   padding: 50px 100px 0 100px;
+   display: flex;
+   gap: 20px;
+}
+.about-para{
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.skills{
+    position: absolute;
+    top: 157%;
+    left: 24%;
+    display: flex;
+    gap: 50px;
+}
+.tools{
+    position: relative;
+    top: 15.8em;
+    right: 16em;
+    width: 200%;
+}
+#clg , #learning{
+    font-weight: 600;
+    word-spacing: 5px;
+}
+.title{
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+.title{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.t-skills{
+    position: relative;
+    top: 13em;
+    right: 34em;
+}
+.skills-title{
+    color: #000;
+    font-weight: 600;
+    padding-bottom: 5px;
+    letter-spacing: 2px;
+}
+.resume{
+    position: relative;
+    top: 30em;
+    right: 52em;
+    width: 450px;
+    height: max-content;
+    background-color: #000;
+    text-align: center;
+    border-radius: 15px;
+    padding: 5px 0;
+    cursor: pointer;
+    font: 1.2rem;
+}
+.resume:hover{
+    background-color: #6b6969;
+}
+.resume:hover a{
+    color:#000;
+}
+.resume #arrow{
+    font-size: 1.7rem;
+    width: 20px;
+    height: 50px;
+    position: relative;
+    left: 5px;
+    top: 2px;
+}
+.resume a{
+    position: relative;
+    bottom: 3px;
+}
 @media screen and (max-width:768px){
     .nav-branding{
-        font-size: 1.4rem;
+        font-size: 2rem;
     }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      .sticky + .sectionTotal {
+        padding-top: 60px;
+      }
     .hamburger{
         display: block;
     }
-    ul{
+    .nav-menu{
         background-color: black;
     }
     .hamburger.active .bar:nth-child(2){
@@ -80,11 +215,81 @@ a , li a {
         width: 100%;
         text-align: center;
         transition: 0.3s;
+        border-top: 1px solid grey;
     }
     .nav-item{
-        margin: 16px 0;;
+        margin: 16px 0;
     }
     .nav-menu.active{
         left: 0;
+    }
+
+    .home-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        align-items: start;
+        padding: 60px 50px 0 50px;
+        min-height: 90vh;
+    }
+    #hello{
+        font-size: 2rem;
+        font-weight: 300;
+    }
+    .para1 p{
+        width: 95%;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    .para1 span{
+        font-weight: 500;
+    }
+    .mail{
+        width: 100%;
+        font-size: 1rem;
+    }
+   
+    .about-section{
+        margin: 0;
+        padding: 50px 50px 0 50px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    .about-para{
+        width: 100%;
+        padding-left: 40px;
+        line-height: 30px;
+        font-size: 1.05rem;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .skills{
+        position: inherit;
+        display: flex;
+        gap: 20px;
+    }
+    .t-skills{
+        position: inherit;
+    }
+    .languages,.tools{
+        padding: 0 40px;
+    }
+    .tools{
+        width: 100%;
+        position: inherit;
+    }
+    .languages ul li , .framework ul li , .tools ul li{
+        font-weight: 300;
+        line-height: 30px;
+    }
+    .resume{
+        position: inherit;
+        width: 150px;
+        height: 50px;
     }
 }

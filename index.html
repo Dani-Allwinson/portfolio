@@ -10,10 +10,10 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="" class="nav-branding">Dani Allwinson</a>
+            <a href="#home" class="nav-branding">DA.</a>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#top" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Contact Me</a></li>
             </ul>
@@ -25,14 +25,61 @@
         </nav>
     </header>
 
-    <main>
-        <section>
-
+    <main class="sectionTotal">
+        <section class="home-section" id="home">
+            <div id="hello">Hello! <span id="wave">&#128075;</span></div>
+            <div class="para1">
+                <p>I'm <span>Dani Allwinson,</span> a front-end development enthusiast focused on beautiful interfaces & experiences!! 💻</p>
+            </div>
+            <div class="mail">
+               <p> Get in touch <span id="hand">👉</span> <span id="mailId">daniallwinson27@gmail.com</span></p>
+            </div>
         </section>
+
+        <section class="about-section" id="about">
+            <div class="title">ABOUT</div>
+            <div class="about-para">
+                <p>
+                    I'm currently an Trainee at Kasadara Technology learning about <span id="clg"> C#, React/Angular</span> for the web with some awesome people. I recently graduated from <span id="clg"> Dr.Mahalingam College of Engineering College and Technology</span>. 
+                </p>
+                <p> 
+                    In addition, I am learning web development and enjoy writing HTML,CSS and JavaScript code.I am a person who sees the bright side of everything.
+                </p>
+            </div>
+            <div class="title t-skills">SKILLS</div>
+            <div class="skills">
+                <div class="languages">
+                    <p class="skills-title">LANGUAGES</p>
+                    <ul class="languages-list">
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>C</li>
+                    </ul>
+                </div>
+                <div class="framework">
+                    <p class="skills-title">FRAMEWORK</p>
+                    <ul class="framework-list">
+                        <li>Tailwind CSS</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skills1">
+                <div class="tools">
+                    <p class="skills-title">TOOLS</p>
+                    <ul class="tools-list">
+                        <li>Git & Github</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="resume"><a href="Dani Allwinson Resume.pdf">Resume <span id="arrow">&rarr;</span></a></div>
+        </section>
+        
     </main>
 
     <footer>
-
+        
     </footer>
     <script src="js/script.js"></script>
 </body>

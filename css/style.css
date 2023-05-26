@@ -183,6 +183,9 @@ a , li a {
     .nav-branding{
         font-size: 2rem;
     }
+    .navbar{
+        width: 100%;
+    }
     .sticky {
         position: fixed;
         top: 0;

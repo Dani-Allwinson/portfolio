@@ -11,19 +11,19 @@
 </head>
 <body>
     <!-- Header Section -->
-    <header>
+    <header id="header">
         <nav class="nav-container">
             <div class="logo"><a href="#">Dani Allwinson</a></div>
-            <a href="#" class="togglemenu">
-                <span class="bar" id="b1"></span>
-                <span class="bar" id="b2"></span>
-                <span class="bar" id="b3"></span>
-            </a>
-            <ul class="ul-container">
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Project">Project</a></li>
-                <li><a href="#Contact">Contact</a></li>
+            <div class="togglemenu" onclick="fun()">
+                <span class="bar" class="b1"></span>
+                <span class="bar" class="b2"></span>
+                <span class="bar" class="b3"></span>
+            </div>
+            <ul class="ul-container" id="menuTab">
+                <li><a href="#Home" class="link">Home</a></li>
+                <li><a href="#About" class="link">About</a></li>
+                <li><a href="#Project" class="link">Project</a></li>
+                <li><a href="#Contact" class="link">Contact</a></li>
             </ul>
         </nav>
         
@@ -33,7 +33,7 @@
         <!-- Hero Section -->
         <section class="main-container" id="Home">
             <div class="image">
-                <img src="img/download.png"alt="Dani Photo">
+                <img src="img/download.png" height="auto" alt="Dani Photo">
             </div>
             <div class="hero-content">
                 <span class="hello">Hello!</span> <span class="name">I'm Dani Allwinson Davidson</span> I am currently learning about Front End Development.
@@ -56,27 +56,27 @@
                 <span><a href="Dani Allwinson Resume.pdf" target="_blank">Download Resume</a></span>
             </div>
             <div class="about">
-                <img src="img/about.png" alt="About Images">
+                <img src="img/about.png" width="320px" alt="About Images">
             </div>
         </section>
 
         <!-- Project Section -->
-        <section class="project-container" id="Project"><br><br><br>
+        <section class="project-container" id="Project">
             <div class="title">
                 <p>Project</p>
             </div>
             <div class="project-row">
                 <div class="project-item">
-                    <a href=""><img src="img/1 (1).jpg" alt="P-1"></a>
+                    <a href=""><img src="img/1 (1).jpg" width="320px"alt="P-1"></a>
                 </div>
                 <div class="project-item">
-                    <a href=""><img src="img/2.jpg" alt="P-2"></a>
+                    <a href=""><img src="img/2.jpg" width="320px"alt="P-2"></a>
                 </div>
                 <div class="project-item">
-                    <a href=""><img src="img/5.jpg" alt="P-3"></a>
+                    <a href=""><img src="img/5.jpg" width="320px"alt="P-3"></a>
                 </div>
                 <div class="project-item">
-                    <a href=""><img src="img/5.jpg" alt="P-3"></a>
+                    <a href=""><img src="img/5.jpg" width="320px"alt="P-3"></a>
                 </div>
             </div>
         </section>

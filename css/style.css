@@ -271,7 +271,7 @@ a , li a {
     .skills{
         position: inherit;
         display: flex;
-        gap: 20px;
+        gap: 10px;
     }
     .t-skills{
         position: inherit;
